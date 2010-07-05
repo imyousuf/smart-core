@@ -144,6 +144,31 @@
         <version>${jersey.version}</version>
       </dependency>
       <dependency>
+        <groupId>com.sun.jersey</groupId>
+        <artifactId>jersey-json</artifactId>
+        <version>${jersey.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.sun.jersey.contribs</groupId>
+        <artifactId>jersey-atom-abdera</artifactId>
+        <version>${jersey.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.codehaus.jackson</groupId>
+        <artifactId>jackson-core-asl</artifactId>
+        <version>${jackson.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.codehaus.jackson</groupId>
+        <artifactId>jackson-mapper-asl</artifactId>
+        <version>${jackson.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.codehaus.jackson</groupId>
+        <artifactId>jackson-jaxrs</artifactId>
+        <version>${jackson.version}</version>
+      </dependency>
+      <dependency>
         <groupId>javax.ws.rs</groupId>
         <artifactId>jsr311-api</artifactId>
         <version>${jaxrs.version}</version>
@@ -416,6 +441,7 @@
     <jsp.version>2.1</jsp.version>
     <junit.version>3.8.1</junit.version>
     <jmock.version>2.5.1</jmock.version>
+    <jackson.version>1.5.3</jackson.version>
     <c3p0.version>0.9.1.2</c3p0.version>
     <derby.version>10.5.3.0_1</derby.version>
     <!-- Need to ugrade to <ehcache.version>2.1.1</ehcache.version> -->
