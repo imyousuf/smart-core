@@ -8,6 +8,40 @@
   <version>0.1-SNAPSHOT</version>
   <name>Smart Core</name>
   <url>http://www.smartitengineering.com</url>
+  <organization>
+    <name>Smart IT Engineering</name>
+    <url>http://www.smartitengineering.com</url>
+  </organization>
+  <developers>
+    <developer>
+      <id>imyousuf</id>
+      <name>Imran M Yousuf</name>
+      <organization>Smart IT Engineering</organization>
+      <organizationUrl>http://www.smartitengineering.com</organizationUrl>
+      <email>imyousuf@smartitengineering.com</email>
+      <roles>
+        <role>Architect</role>
+        <role>Developer</role>
+        <role>Maintainer</role>
+      </roles>
+    </developer>
+  </developers>
+  <issueManagement>
+    <system>GitHub</system>
+    <url>http://github.com/imyousuf/smart-core/issues</url>
+  </issueManagement>
+  <licenses>
+    <license>
+      <name>GNU Lesser General Public License</name>
+      <url>http://www.gnu.org/licenses/</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <connection>scm:git:git://github.com/imyousuf/smart-core.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:imyousuf/smart-core.git</developerConnection>
+    <url>http://github.com/imyousuf/smart-core</url>
+  </scm>
   <distributionManagement>
     <!-- use the following if you're not using a snapshot version. -->
     <repository>
@@ -183,6 +217,16 @@
         <groupId>dom4j</groupId>
         <artifactId>dom4j</artifactId>
         <version>${dom4j.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.codehaus.plexus</groupId>
+        <artifactId>plexus-utils</artifactId>
+        <version>${plexus-utils.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.maven.scm</groupId>
+        <artifactId>maven-scm-provider-gitexe</artifactId>
+        <version>${plugin.scm.version}</version>
       </dependency>
       <!-- Provided scope -->
       <dependency>
@@ -360,7 +404,7 @@
     <atmosphere.version>0.6</atmosphere.version>
     <jaxrs.version>1.1.1</jaxrs.version>
     <jgit.version>0.8.4</jgit.version>
-    <jersey.version>1.4</jersey.version>
+    <jersey.version>1.3</jersey.version>
     <commons.io.version>1.4</commons.io.version>
     <commons.lang.version>2.5</commons.lang.version>
     <jruby.version>1.5.1</jruby.version>
