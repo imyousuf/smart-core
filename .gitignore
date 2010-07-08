@@ -1,0 +1,10 @@
+private/
+catalog.xml
+profiles.xml
+nbactions.xml
+derby.log
+generated
+target
+*.properties
+*~
+
