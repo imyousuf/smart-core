@@ -184,6 +184,21 @@
         <version>${atmosphere.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.apache.abdera</groupId>
+        <artifactId>abdera-core</artifactId>
+        <version>${abdera.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.abdera</groupId>
+        <artifactId>abdera-extensions-json</artifactId>
+        <version>${abdera.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.abdera</groupId>
+        <artifactId>abdera-extensions-opensearch</artifactId>
+        <version>${abdera.version}</version>
+      </dependency>
+      <dependency>
         <groupId>com.smartitengineering.smart-util</groupId>
         <artifactId>smart-bean-util</artifactId>
         <version>${smart.util.version}</version>
@@ -452,6 +467,7 @@
     <asm.version>3.1</asm.version>
     <spring.version>2.5.6</spring.version>
     <spring.hibernate.version>2.0.8</spring.hibernate.version>
+    <abdera.version>1.0</abdera.version>
     <hbase.version>0.21.0-SNAPSHOT</hbase.version>
     <smart.util.version>0.2-SNAPSHOT</smart.util.version>
     <smart.dao.version>0.4-SNAPSHOT</smart.dao.version>
