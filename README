@@ -1,0 +1,6 @@
+Introduction
+============
+
+This POM file is intended to be the parent POM of all projects. Its purpose is
+to encompass all the dependency and plugin version to be used by Smart IT
+Engineering Ltd., but it can be used by anyone.
