@@ -478,7 +478,7 @@
     <smart.util.version>0.2-SNAPSHOT</smart.util.version>
     <smart.dao.version>0.4-SNAPSHOT</smart.dao.version>
     <!-- plugins -->
-    <plugin.jetty.version>7.0.2.v20100331</plugin.jetty.version>
+    <plugin.jetty.version>7.1.5.v20100705</plugin.jetty.version>
     <plugin.compiler.version>2.0.2</plugin.compiler.version>
     <plugin.exec.version>1.1.1</plugin.exec.version>
     <plugin.site.version>2.0.1</plugin.site.version>
