@@ -368,21 +368,52 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>${plugin.compiler.version}</version>
+          <inherited>${compiler.inherited}</inherited>
+          <configuration>
+            <source>${compiler.source.version}</source>
+            <target>${compiler.target.version}</target>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.mortbay.jetty</groupId>
           <artifactId>jetty-maven-plugin</artifactId>
           <version>${plugin.jetty.version}</version>
+          <configuration>
+            <connectors>
+              <connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
+                <port>${jetty.port}</port>
+                <maxIdleTime>${jetty.max.idle}</maxIdleTime>
+              </connector>
+            </connectors>
+            <stopPort>${jetty.stop.port}</stopPort>
+            <stopKey>${jetty.stop.key}</stopKey>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-site-plugin</artifactId>
           <version>${plugin.site.version}</version>
+          <inherited>${site.inherited}</inherited>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
           <version>${plugin.javadoc.version}</version>
+          <inherited>${javadoc.inherited}</inherited>
+          <configuration>
+            <aggregate>${javadoc.aggregate}</aggregate>
+            <linksource>${javadoc.linksource}</linksource>
+            <attach>true</attach>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-source-plugin</artifactId>
+          <version>${plugin.source.version}</version>
+          <inherited>${source.inherited}</inherited>
+          <configuration>
+            <attach>${source.attach}</attach>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
@@ -396,14 +427,21 @@
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>${plugin.surefire.version}</version>
+          <inherited>${surefire.inherited}</inherited>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-report-plugin</artifactId>
           <version>${plugin.surefire.version}</version>
-          <inherited>true</inherited>
+          <inherited>${surefire.inherited}</inherited>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>findbugs-maven-plugin</artifactId>
           <version>${plugin.findbugs.version}</version>
+          <inherited>${findbugs.inherited}</inherited>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -446,7 +484,7 @@
     </extensions>
   </build>
   <properties>
-    <!-- dependencies -->
+    <!-- dependency versions -->
     <atmosphere.version>0.6</atmosphere.version>
     <jaxrs.version>1.1.1</jaxrs.version>
     <jgit.version>0.8.4</jgit.version>
@@ -477,14 +515,15 @@
     <hbase.version>0.21.0-SNAPSHOT</hbase.version>
     <smart.util.version>0.2-SNAPSHOT</smart.util.version>
     <smart.dao.version>0.4-SNAPSHOT</smart.dao.version>
-    <!-- plugins -->
+    <!-- plugins versions -->
     <plugin.jetty.version>7.1.5.v20100705</plugin.jetty.version>
     <plugin.compiler.version>2.0.2</plugin.compiler.version>
     <plugin.exec.version>1.1.1</plugin.exec.version>
     <plugin.site.version>2.0.1</plugin.site.version>
+    <plugin.source.version>2.1.2</plugin.source.version>
     <plugin.javadoc.version>2.6</plugin.javadoc.version>
     <plugin.cobertura.version>2.3</plugin.cobertura.version>
-    <plugin.surefire.version>2.4.3</plugin.surefire.version>
+    <plugin.surefire.version>2.5</plugin.surefire.version>
     <plugin.findbugs.version>2.1</plugin.findbugs.version>
     <plugin.changelog.version>2.1</plugin.changelog.version>
     <plugin.scm.version>1.3</plugin.scm.version>
@@ -493,9 +532,26 @@
     <plugin.jar.version>2.3.1</plugin.jar.version>
     <plugin.xml.version>1.0-beta-3</plugin.xml.version>
     <plexus-utils.version>1.5.6</plexus-utils.version>
-    <!-- extensions -->
+    <!-- extension versions -->
     <wagon.ftp.version>1.0-beta-6</wagon.ftp.version>
     <wagon.svn.version>1.9</wagon.svn.version>
+    <!-- plugin configurations -->
+    <compiler.inherited>true</compiler.inherited>
+    <compiler.source.version>1.6</compiler.source.version>
+    <compiler.target.version>1.6</compiler.target.version>
+    <javadoc.inherited>true</javadoc.inherited>
+    <javadoc.aggregate>false</javadoc.aggregate>
+    <javadoc.linksource>true</javadoc.linksource>
+    <javadoc.attach>true</javadoc.attach>
+    <surefire.inherited>true</surefire.inherited>
+    <findbugs.inherited>true</findbugs.inherited>
+    <site.inherited>true</site.inherited>
+    <source.inherited>true</source.inherited>
+    <source.attach>true</source.attach>
+    <jetty.port>9090</jetty.port>
+    <jetty.max.idle>60000</jetty.max.idle>
+    <jetty.stop.port>9999</jetty.stop.port>
+    <jetty.stop.key>stop</jetty.stop.key>
     <!-- others -->
     <last.release.tag>0.0</last.release.tag>
   </properties>
