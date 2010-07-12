@@ -403,8 +403,18 @@
           <configuration>
             <aggregate>${javadoc.aggregate}</aggregate>
             <linksource>${javadoc.linksource}</linksource>
-            <attach>true</attach>
+            <attach>${javadoc.attach}</attach>
           </configuration>
+          <executions>
+            <execution>
+              <id>attach-docs</id>
+              <phase>package</phase>
+              <inherited>${javadoc.exec.inherited}</inherited>
+              <goals>
+                <goal>jar</goal>
+              </goals>
+            </execution>
+          </executions>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -414,6 +424,16 @@
           <configuration>
             <attach>${source.attach}</attach>
           </configuration>
+          <executions>
+            <execution>
+              <id>attach-sources</id>
+              <phase>package</phase>
+              <inherited>${source.exec.inherited}</inherited>
+              <goals>
+                <goal>jar</goal>
+              </goals>
+            </execution>
+          </executions>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
@@ -540,6 +560,7 @@
     <compiler.source.version>1.6</compiler.source.version>
     <compiler.target.version>1.6</compiler.target.version>
     <javadoc.inherited>true</javadoc.inherited>
+    <javadoc.exec.inherited>true</javadoc.exec.inherited>
     <javadoc.aggregate>false</javadoc.aggregate>
     <javadoc.linksource>true</javadoc.linksource>
     <javadoc.attach>true</javadoc.attach>
@@ -547,6 +568,7 @@
     <findbugs.inherited>true</findbugs.inherited>
     <site.inherited>true</site.inherited>
     <source.inherited>true</source.inherited>
+    <source.exec.inherited>true</source.exec.inherited>
     <source.attach>true</source.attach>
     <jetty.port>9090</jetty.port>
     <jetty.max.idle>60000</jetty.max.idle>
