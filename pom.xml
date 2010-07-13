@@ -94,6 +94,11 @@
         <version>${commons.lang.version}</version>
       </dependency>
       <dependency>
+        <groupId>commons-collections</groupId>
+        <artifactId>commons-collections</artifactId>
+        <version>${commons.collection.version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.apache.hbase</groupId>
         <artifactId>hbase</artifactId>
         <version>${hbase.version}</version>
@@ -102,6 +107,11 @@
         <groupId>asm</groupId>
         <artifactId>asm</artifactId>
         <version>${asm.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring</artifactId>
+        <version>${spring.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
@@ -134,6 +144,36 @@
         <version>${spring.hibernate.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-core</artifactId>
+        <version>${spring.security.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-acl</artifactId>
+        <version>${spring.security.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate</artifactId>
+        <version>${hibernate.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjrt</artifactId>
+        <version>${aspectj.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjweaver</artifactId>
+        <version>${aspectj.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.opensymphony.quartz</groupId>
+        <artifactId>quartz</artifactId>
+        <version>${quartz.version}</version>
+      </dependency>
+      <dependency>
         <groupId>com.sun.jersey</groupId>
         <artifactId>jersey-server</artifactId>
         <version>${jersey.version}</version>
@@ -151,6 +191,21 @@
       <dependency>
         <groupId>com.sun.jersey.contribs</groupId>
         <artifactId>jersey-atom-abdera</artifactId>
+        <version>${jersey.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.sun.jersey</groupId>
+        <artifactId>jersey-client</artifactId>
+        <version>${jersey.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.sun.jersey.contribs</groupId>
+        <artifactId>jersey-apache-client</artifactId>
+        <version>${jersey.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.sun.jersey.contribs</groupId>
+        <artifactId>jersey-spring</artifactId>
         <version>${jersey.version}</version>
       </dependency>
       <dependency>
@@ -215,6 +270,11 @@
       </dependency>
       <dependency>
         <groupId>com.smartitengineering</groupId>
+        <artifactId>smart-domain</artifactId>
+        <version>${smart.dao.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.smartitengineering</groupId>
         <artifactId>smart-hibernate-abstract-dao</artifactId>
         <version>${smart.dao.version}</version>
       </dependency>
@@ -227,6 +287,11 @@
         <groupId>org.apache.derby</groupId>
         <artifactId>derby</artifactId>
         <version>${derby.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>${mysql.version}</version>
       </dependency>
       <dependency>
         <groupId>cglib</groupId>
@@ -346,7 +411,7 @@
     <repository>
       <id>apache-sonatype-snapshot</id>
       <name>Apache Snapshot repo hosted by Sonatype</name>
-      <url>http://repository.sonatype.org/content/repositories/apache-snapshots/</url>
+      <url>http://repository.sonatype.org/content/repositories/apache-snapshots</url>
       <layout>default</layout>
       <releases>
         <enabled>false</enabled>
@@ -465,6 +530,12 @@
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>${plugin.war.version}</version>
+          <inherited>${war.inherited}</inherited>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-scm-plugin</artifactId>
           <version>${plugin.scm.version}</version>
         </plugin>
@@ -511,6 +582,7 @@
     <jersey.version>1.3</jersey.version>
     <commons.io.version>1.4</commons.io.version>
     <commons.lang.version>2.5</commons.lang.version>
+    <commons.collection.version>3.2.1</commons.collection.version>
     <jruby.version>1.5.1</jruby.version>
     <jruby.embed.version>0.1.3</jruby.embed.version>
     <groovy.version>1.7.3</groovy.version>
@@ -531,7 +603,12 @@
     <asm.version>3.1</asm.version>
     <spring.version>2.5.6</spring.version>
     <spring.hibernate.version>2.0.8</spring.hibernate.version>
+    <spring.security.version>2.0.5.RELEASE</spring.security.version>
+    <hibernate.version>3.2.7.ga</hibernate.version>
     <abdera.version>1.0</abdera.version>
+    <mysql.version>5.1.9</mysql.version>
+    <aspectj.version>1.6.6</aspectj.version>
+    <quartz.version>1.6.1</quartz.version>
     <hbase.version>0.21.0-SNAPSHOT</hbase.version>
     <smart.util.version>0.2-SNAPSHOT</smart.util.version>
     <smart.dao.version>0.4-SNAPSHOT</smart.dao.version>
@@ -551,6 +628,7 @@
     <plugin.release.version>2.0-beta-9</plugin.release.version>
     <plugin.jar.version>2.3.1</plugin.jar.version>
     <plugin.xml.version>1.0-beta-3</plugin.xml.version>
+    <plugin.war.version>2.1-beta-1</plugin.war.version>
     <plexus-utils.version>1.5.6</plexus-utils.version>
     <!-- extension versions -->
     <wagon.ftp.version>1.0-beta-6</wagon.ftp.version>
@@ -566,6 +644,7 @@
     <javadoc.attach>true</javadoc.attach>
     <surefire.inherited>true</surefire.inherited>
     <findbugs.inherited>true</findbugs.inherited>
+    <war.inherited>true</war.inherited>
     <site.inherited>true</site.inherited>
     <source.inherited>true</source.inherited>
     <source.exec.inherited>true</source.exec.inherited>
