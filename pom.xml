@@ -265,7 +265,7 @@
       </dependency>
       <dependency>
         <groupId>com.smartitengineering.smart-util.rest</groupId>
-        <artifactId>atom</artifactId>
+        <artifactId>atom-client</artifactId>
         <version>${smart.util.version}</version>
       </dependency>
       <dependency>
