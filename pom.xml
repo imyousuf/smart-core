@@ -343,6 +343,31 @@
         <artifactId>jstl</artifactId>
         <version>${jstl.version}</version>
       </dependency>
+      <dependency>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-server</artifactId>
+        <version>${jetty.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-webapp</artifactId>
+        <version>${jetty.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-jsp-2.1</artifactId>
+        <version>${jetty.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.jetty.aggregate</groupId>
+        <artifactId>jetty-all-server</artifactId>
+        <version>${jetty.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.jetty.aggregate</groupId>
+        <artifactId>jetty-all</artifactId>
+        <version>${jetty.version}</version>
+      </dependency>
       <!-- Provided scope -->
       <dependency>
         <groupId>javax.servlet</groupId>
@@ -620,11 +645,12 @@
     <aspectj.version>1.6.6</aspectj.version>
     <quartz.version>1.6.1</quartz.version>
     <jstl.version>1.2</jstl.version>
+    <jetty.version>7.1.5.v20100705</jetty.version>
     <hbase.version>0.21.0-SNAPSHOT</hbase.version>
     <smart.util.version>0.2-SNAPSHOT</smart.util.version>
     <smart.dao.version>0.4-SNAPSHOT</smart.dao.version>
     <!-- plugins versions -->
-    <plugin.jetty.version>7.1.5.v20100705</plugin.jetty.version>
+    <plugin.jetty.version>${jetty.version}</plugin.jetty.version>
     <plugin.compiler.version>2.0.2</plugin.compiler.version>
     <plugin.exec.version>1.1.1</plugin.exec.version>
     <plugin.site.version>2.0.1</plugin.site.version>
