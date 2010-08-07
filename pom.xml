@@ -269,6 +269,16 @@
         <version>${smart.util.version}</version>
       </dependency>
       <dependency>
+        <groupId>com.smartitengineering.smart-util.rest</groupId>
+        <artifactId>atom-server</artifactId>
+        <version>${smart.util.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.smartitengineering.smart-util.rest</groupId>
+        <artifactId>server</artifactId>
+        <version>${smart.util.version}</version>
+      </dependency>
+      <dependency>
         <groupId>com.smartitengineering</groupId>
         <artifactId>smart-abstract-dao</artifactId>
         <version>${smart.dao.version}</version>
