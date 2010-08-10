@@ -378,6 +378,11 @@
         <artifactId>jetty-all</artifactId>
         <version>${jetty.version}</version>
       </dependency>
+      <dependency>
+        <groupId>xom</groupId>
+        <artifactId>xom</artifactId>
+        <version>${xom.version}</version>
+      </dependency>
       <!-- Provided scope -->
       <dependency>
         <groupId>javax.servlet</groupId>
@@ -640,6 +645,7 @@
     <jackson.version>1.5.3</jackson.version>
     <c3p0.version>0.9.1.2</c3p0.version>
     <derby.version>10.5.3.0_1</derby.version>
+    <xom.version>1.2.5</xom.version>
     <!-- Need to ugrade to <ehcache.version>2.1.1</ehcache.version> -->
     <ehcache.version>1.5.0</ehcache.version>
     <dom4j.version>1.6.1</dom4j.version>
