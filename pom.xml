@@ -140,6 +140,11 @@
       </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
+        <artifactId>spring-orm</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
         <artifactId>spring-dao</artifactId>
         <version>${spring.hibernate.version}</version>
       </dependency>
@@ -260,6 +265,11 @@
       </dependency>
       <dependency>
         <groupId>com.smartitengineering.smart-util</groupId>
+        <artifactId>simple-util</artifactId>
+        <version>${smart.util.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.smartitengineering.smart-util</groupId>
         <artifactId>smart-bean-spring-util</artifactId>
         <version>${smart.util.version}</version>
       </dependency>
@@ -312,6 +322,11 @@
         <groupId>cglib</groupId>
         <artifactId>cglib-nodep</artifactId>
         <version>${cglib.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>ant-contrib</groupId>
+        <artifactId>ant-contrib</artifactId>
+        <version>${ant.contrib.version}</version>
       </dependency>
       <dependency>
         <groupId>org.codehaus.jackson</groupId>
@@ -382,6 +397,86 @@
         <groupId>xom</groupId>
         <artifactId>xom</artifactId>
         <version>${xom.version}</version>
+      </dependency>
+      <!-- Smart DAO -->
+      <dependency>
+        <groupId>com.smartitengineering</groupId>
+        <artifactId>smart-dao-queryparam</artifactId>
+        <version>${smart.dao.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.smartitengineering</groupId>
+        <artifactId>smart-domain</artifactId>
+        <version>${smart.dao.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.smartitengineering</groupId>
+        <artifactId>smart-abstract-dao</artifactId>
+        <version>${smart.dao.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.smartitengineering.smart-dao</groupId>
+        <artifactId>smart-hbase-dao</artifactId>
+        <version>${smart.dao.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.smartitengineering</groupId>
+        <artifactId>smart-hibernate-abstract-dao</artifactId>
+        <version>${smart.dao.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>asm</groupId>
+            <artifactId>asm</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>asm</groupId>
+            <artifactId>asm-attrs</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>com.smartitengineering</groupId>
+        <artifactId>smart-cache</artifactId>
+        <version>${smart.dao.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.smartitengineering</groupId>
+        <artifactId>smart-dao-search</artifactId>
+        <version>${smart.dao.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.smartitengineering</groupId>
+        <artifactId>smart-rs</artifactId>
+        <version>${smart.dao.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.smartitengineering.smart-version</groupId>
+        <artifactId>smart-version-api</artifactId>
+        <version>${smart.dao.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.smartitengineering.smart-version</groupId>
+        <artifactId>smart-dao-version</artifactId>
+        <version>${smart.dao.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.smartitengineering.smart-version</groupId>
+        <artifactId>smart-version-jgit-impl</artifactId>
+        <version>${smart.dao.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.smartitengineering.smart-exim</groupId>
+        <artifactId>smart-exim-api</artifactId>
+        <version>${smart.dao.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.smartitengineering.smart-exim</groupId>
+        <artifactId>smart-exim-xml-impl</artifactId>
+        <version>${smart.dao.version}</version>
       </dependency>
       <!-- Provided scope -->
       <dependency>
@@ -462,6 +557,18 @@
       <id>apache-sonatype-snapshot</id>
       <name>Apache Snapshot repo hosted by Sonatype</name>
       <url>http://repository.sonatype.org/content/repositories/apache-snapshots</url>
+      <layout>default</layout>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>apache-snapshot</id>
+      <name>Apache Snapshot repo hosted by Sonatype</name>
+      <url>https://repository.apache.org/content/repositories/snapshots</url>
       <layout>default</layout>
       <releases>
         <enabled>false</enabled>
@@ -556,9 +663,19 @@
           <version>${plugin.cobertura.version}</version>
         </plugin>
         <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-antrun-plugin</artifactId>
+          <version>${plugin.antrun.version}</version>
+        </plugin>
+        <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>xml-maven-plugin</artifactId>
           <version>${plugin.xml.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>sonar-maven-plugin</artifactId>
+          <version>${plugin.sonar.version}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -662,7 +779,8 @@
     <quartz.version>1.6.1</quartz.version>
     <jstl.version>1.2</jstl.version>
     <jetty.version>7.1.5.v20100705</jetty.version>
-    <hbase.version>0.21.0-SNAPSHOT</hbase.version>
+    <ant.contrib.version>1.0b3</ant.contrib.version>
+    <hbase.version>0.89.0-SNAPSHOT</hbase.version>
     <smart.util.version>0.2-SNAPSHOT</smart.util.version>
     <smart.dao.version>0.4-SNAPSHOT</smart.dao.version>
     <!-- plugins versions -->
@@ -682,6 +800,8 @@
     <plugin.jar.version>2.3.1</plugin.jar.version>
     <plugin.xml.version>1.0-beta-3</plugin.xml.version>
     <plugin.war.version>2.1-beta-1</plugin.war.version>
+    <plugin.sonar.version>1.0-beta-1</plugin.sonar.version>
+    <plugin.antrun.version>1.2</plugin.antrun.version>
     <plexus-utils.version>1.5.6</plexus-utils.version>
     <!-- extension versions -->
     <wagon.ftp.version>1.0-beta-6</wagon.ftp.version>
