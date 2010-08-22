@@ -289,21 +289,6 @@
         <version>${smart.util.version}</version>
       </dependency>
       <dependency>
-        <groupId>com.smartitengineering</groupId>
-        <artifactId>smart-abstract-dao</artifactId>
-        <version>${smart.dao.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.smartitengineering</groupId>
-        <artifactId>smart-domain</artifactId>
-        <version>${smart.dao.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.smartitengineering</groupId>
-        <artifactId>smart-hibernate-abstract-dao</artifactId>
-        <version>${smart.dao.version}</version>
-      </dependency>
-      <dependency>
         <groupId>c3p0</groupId>
         <artifactId>c3p0</artifactId>
         <version>${c3p0.version}</version>
@@ -492,6 +477,13 @@
         <scope>provided</scope>
       </dependency>
       <!-- Test scope -->
+      <dependency>
+        <groupId>org.apache.hbase</groupId>
+        <artifactId>hbase</artifactId>
+        <version>${hbase.version}</version>
+        <classifier>tests</classifier>
+        <scope>test</scope>
+      </dependency>
       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
