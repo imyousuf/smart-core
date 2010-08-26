@@ -478,6 +478,12 @@
       </dependency>
       <!-- Test scope -->
       <dependency>
+        <groupId>org.apache.hadoop</groupId>
+        <artifactId>hadoop-test</artifactId>
+        <version>${hadoop.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
         <groupId>org.apache.hbase</groupId>
         <artifactId>hbase</artifactId>
         <version>${hbase.version}</version>
@@ -559,7 +565,7 @@
     </repository>
     <repository>
       <id>apache-snapshot</id>
-      <name>Apache Snapshot repo hosted by Sonatype</name>
+      <name>Apache Snapshot repo</name>
       <url>https://repository.apache.org/content/repositories/snapshots</url>
       <layout>default</layout>
       <releases>
@@ -568,6 +574,17 @@
       <snapshots>
         <enabled>true</enabled>
       </snapshots>
+    </repository>
+    <repository>
+      <id>temp-hadoop</id>
+      <name>Hadoop 0.20.1/2 packaging, thrift, zk</name>
+      <url>http://people.apache.org/~rawson/repo/</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
     </repository>
   </repositories>
   <build>
@@ -772,6 +789,7 @@
     <jstl.version>1.2</jstl.version>
     <jetty.version>7.1.5.v20100705</jetty.version>
     <ant.contrib.version>1.0b3</ant.contrib.version>
+    <hadoop.version>0.20.3-append-r964955-1240</hadoop.version>
     <hbase.version>0.89.0-SNAPSHOT</hbase.version>
     <smart.util.version>0.2-SNAPSHOT</smart.util.version>
     <smart.dao.version>0.4-SNAPSHOT</smart.dao.version>
