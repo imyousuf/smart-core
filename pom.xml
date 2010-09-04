@@ -290,6 +290,11 @@
       </dependency>
       <dependency>
         <groupId>com.smartitengineering.smart-util.rest</groupId>
+        <artifactId>jersey-cache-client</artifactId>
+        <version>${smart.util.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.smartitengineering.smart-util.rest</groupId>
         <artifactId>atom-server</artifactId>
         <version>${smart.util.version}</version>
       </dependency>
