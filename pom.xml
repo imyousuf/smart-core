@@ -274,6 +274,11 @@
         <version>${smart.util.version}</version>
       </dependency>
       <dependency>
+        <groupId>com.smartitengineering.smart-util.rest</groupId>
+        <artifactId>generic-client</artifactId>
+        <version>${smart.util.version}</version>
+      </dependency>
+      <dependency>
         <groupId>com.smartitengineering.smart-util</groupId>
         <artifactId>simple-util</artifactId>
         <version>${smart.util.version}</version>
