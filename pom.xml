@@ -494,6 +494,11 @@
         <version>${http.testbed.version}</version>
         <type>${http.testbed.packaging}</type>
       </dependency>
+      <dependency>
+        <groupId>org.codehaus.mojo.jspc</groupId>
+        <artifactId>jspc-compiler-tomcat6</artifactId>
+        <version>${plugin.jspc.version}</version>
+      </dependency>
       <!-- Provided scope -->
       <dependency>
         <groupId>javax.servlet</groupId>
@@ -771,6 +776,11 @@
           <artifactId>maven-jar-plugin</artifactId>
           <version>${plugin.jar.version}</version>
         </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo.jspc</groupId>
+          <artifactId>jspc-maven-plugin</artifactId>
+          <version>${plugin.jspc.version}</version>
+        </plugin>
       </plugins>
     </pluginManagement>
     <extensions>
@@ -852,6 +862,7 @@
     <plugin.sonar.version>1.0-beta-1</plugin.sonar.version>
     <plugin.antrun.version>1.2</plugin.antrun.version>
     <plugin.dependency.version>2.1</plugin.dependency.version>
+    <plugin.jspc.version>2.0-alpha-3</plugin.jspc.version>
     <plexus-utils.version>1.5.6</plexus-utils.version>
     <!-- extension versions -->
     <wagon.ftp.version>1.0-beta-6</wagon.ftp.version>
