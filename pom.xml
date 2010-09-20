@@ -440,6 +440,11 @@
         <version>${smart.dao.version}</version>
       </dependency>
       <dependency>
+        <groupId>com.smartitengineering.smart-dao</groupId>
+        <artifactId>smart-hbase-dao-spi</artifactId>
+        <version>${smart.dao.version}</version>
+      </dependency>
+      <dependency>
         <groupId>com.smartitengineering</groupId>
         <artifactId>smart-hibernate-abstract-dao</artifactId>
         <version>${smart.dao.version}</version>
