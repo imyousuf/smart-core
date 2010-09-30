@@ -314,6 +314,26 @@
         <version>${smart.util.version}</version>
       </dependency>
       <dependency>
+        <groupId>com.smartitengineering.smart-util.opensearch</groupId>
+        <artifactId>api</artifactId>
+        <version>${smart.util.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.smartitengineering.smart-util.opensearch</groupId>
+        <artifactId>dom-io</artifactId>
+        <version>${smart.util.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.smartitengineering.smart-util.opensearch</groupId>
+        <artifactId>impl</artifactId>
+        <version>${smart.util.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.smartitengineering.smart-util.opensearch</groupId>
+        <artifactId>jaxrs</artifactId>
+        <version>${smart.util.version}</version>
+      </dependency>
+      <dependency>
         <groupId>com.smartitengineering.smart-user</groupId>
         <artifactId>smart-user-client-api</artifactId>
         <version>${smart.user.version}</version>
