@@ -455,6 +455,11 @@
         <version>${smart.dao.version}</version>
       </dependency>
       <dependency>
+        <groupId>com.smartitengineering.smart-dao</groupId>
+        <artifactId>hbase-ddl-util</artifactId>
+        <version>${smart.dao.version}</version>
+      </dependency>
+      <dependency>
         <groupId>com.smartitengineering</groupId>
         <artifactId>smart-domain</artifactId>
         <version>${smart.dao.version}</version>
