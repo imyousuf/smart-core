@@ -109,6 +109,11 @@
         <version>${commons.httpclient.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.apache.solr</groupId>
+        <artifactId>solr-solrj</artifactId>
+        <version>${solr.version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.apache.hbase</groupId>
         <artifactId>hbase</artifactId>
         <version>${hbase.version}</version>
@@ -935,6 +940,7 @@
     <commons.codec.version>1.4</commons.codec.version>
     <velocity.version>1.6</velocity.version>
     <commons.httpclient.version>3.1</commons.httpclient.version>
+    <solr.version>1.4.1</solr.version>
     <!-- plugins versions -->
     <plugin.jetty.version>${jetty.version}</plugin.jetty.version>
     <plugin.compiler.version>2.0.2</plugin.compiler.version>
