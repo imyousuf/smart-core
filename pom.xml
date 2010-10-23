@@ -466,6 +466,16 @@
       </dependency>
       <dependency>
         <groupId>com.smartitengineering.smart-dao</groupId>
+        <artifactId>solr-dao</artifactId>
+        <version>${smart.dao.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.smartitengineering.smart-dao</groupId>
+        <artifactId>solr-search-dao</artifactId>
+        <version>${smart.dao.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.smartitengineering.smart-dao</groupId>
         <artifactId>hbase-ddl-util</artifactId>
         <version>${smart.dao.version}</version>
       </dependency>
