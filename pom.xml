@@ -476,6 +476,11 @@
       </dependency>
       <dependency>
         <groupId>com.smartitengineering.smart-dao</groupId>
+        <artifactId>smart-abstract-dao-decorator</artifactId>
+        <version>${smart.dao.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.smartitengineering.smart-dao</groupId>
         <artifactId>hbase-ddl-util</artifactId>
         <version>${smart.dao.version}</version>
       </dependency>
