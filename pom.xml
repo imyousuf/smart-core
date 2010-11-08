@@ -269,6 +269,11 @@
         <version>${atmosphere.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.atmosphere</groupId>
+        <artifactId>atmosphere-jgroups</artifactId>
+        <version>${atmosphere.version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.apache.abdera</groupId>
         <artifactId>abdera-core</artifactId>
         <version>${abdera.version}</version>
