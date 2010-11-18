@@ -953,7 +953,7 @@
     <quartz.version>1.6.1</quartz.version>
     <jstl.version>1.2</jstl.version>
     <guice.version>2.0</guice.version>
-    <jetty.version>7.1.5.v20100705</jetty.version>
+    <jetty.version>7.2.0.v20101020</jetty.version>
     <ant.contrib.version>1.0b3</ant.contrib.version>
     <hadoop.version>0.20.3-append-r964955-1240</hadoop.version>
     <hbase.version>0.89.0-SNAPSHOT</hbase.version>
