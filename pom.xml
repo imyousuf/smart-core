@@ -599,6 +599,16 @@
         <artifactId>velocity</artifactId>
         <version>${velocity.version}</version>
       </dependency>
+      <dependency>
+        <groupId>com.smartitengineering.smart-cms</groupId>
+        <artifactId>smart-cms-client-api</artifactId>
+        <version>${smart.cms.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.smartitengineering.smart-cms</groupId>
+        <artifactId>smart-cms-client-impl</artifactId>
+        <version>${smart.cms.version}</version>
+      </dependency>
       <!-- Runtime scope -->
       <dependency>
         <groupId>org.slf4j</groupId>
@@ -958,6 +968,7 @@
     <hadoop.version>0.20.3-append-r964955-1240</hadoop.version>
     <hbase.version>0.89.0-SNAPSHOT</hbase.version>
     <smart.util.version>0.2-SNAPSHOT</smart.util.version>
+    <smart.cms.version>0.1-SNAPSHOT</smart.cms.version>
     <smart.dao.version>0.4-SNAPSHOT</smart.dao.version>
     <smart.user.version>0.2-SNAPSHOT</smart.user.version>
     <http.testbed.version>1.0</http.testbed.version>
