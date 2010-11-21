@@ -609,6 +609,11 @@
         <artifactId>smart-cms-client-impl</artifactId>
         <version>${smart.cms.version}</version>
       </dependency>
+      <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>${guava.version}</version>
+      </dependency>
       <!-- Runtime scope -->
       <dependency>
         <groupId>org.slf4j</groupId>
@@ -977,6 +982,7 @@
     <velocity.version>1.6</velocity.version>
     <commons.httpclient.version>3.1</commons.httpclient.version>
     <solr.version>1.4.1</solr.version>
+    <guava.version>r06</guava.version>
     <!-- plugins versions -->
     <plugin.jetty.version>${jetty.version}</plugin.jetty.version>
     <plugin.compiler.version>2.0.2</plugin.compiler.version>
