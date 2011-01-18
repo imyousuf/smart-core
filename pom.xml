@@ -966,7 +966,7 @@
     <asm.version>3.1</asm.version>
     <spring.version>2.5.6</spring.version>
     <spring.hibernate.version>2.0.8</spring.hibernate.version>
-    <spring.security.version>2.0.5.RELEASE</spring.security.version>
+    <spring.security.version>2.0.6.RELEASE</spring.security.version>
     <hibernate.version>3.2.7.ga</hibernate.version>
     <abdera.version>1.0</abdera.version>
     <mysql.version>5.1.9</mysql.version>
