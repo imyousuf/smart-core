@@ -940,7 +940,7 @@
     <atmosphere.version>0.6.3</atmosphere.version>
     <jaxrs.version>1.1.1</jaxrs.version>
     <jgit.version>0.8.4</jgit.version>
-    <jersey.version>1.5-ea08</jersey.version>
+    <jersey.version>1.5</jersey.version>
     <commons.io.version>1.4</commons.io.version>
     <commons.lang.version>2.5</commons.lang.version>
     <commons.collection.version>3.2.1</commons.collection.version>
