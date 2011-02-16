@@ -190,7 +190,7 @@
         <version>${aspectj.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opensymphony.quartz</groupId>
+        <groupId>org.quartz-scheduler</groupId>
         <artifactId>quartz</artifactId>
         <version>${quartz.version}</version>
       </dependency>
@@ -983,7 +983,7 @@
     <abdera.version>1.0</abdera.version>
     <mysql.version>5.1.9</mysql.version>
     <aspectj.version>1.6.6</aspectj.version>
-    <quartz.version>1.6.1</quartz.version>
+    <quartz.version>1.8.4</quartz.version>
     <jstl.version>1.2</jstl.version>
     <guice.version>2.0</guice.version>
     <jetty.version>7.2.0.v20101020</jetty.version>
