@@ -370,6 +370,16 @@
         <version>${smart.user.version}</version>
       </dependency>
       <dependency>
+        <groupId>com.smartitengineering.smart-async-events</groupId>
+        <artifactId>async-events-api</artifactId>
+        <version>${async.events.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.smartitengineering.smart-async-events</groupId>
+        <artifactId>async-events-impl-event-hub</artifactId>
+        <version>${async.events.version}</version>
+      </dependency>
+      <dependency>
         <groupId>c3p0</groupId>
         <artifactId>c3p0</artifactId>
         <version>${c3p0.version}</version>
@@ -994,6 +1004,7 @@
     <smart.cms.version>0.1-SNAPSHOT</smart.cms.version>
     <smart.dao.version>0.4-SNAPSHOT</smart.dao.version>
     <smart.user.version>0.2-SNAPSHOT</smart.user.version>
+    <async.events.version>0.1-SNAPSHOT</async.events.version>
     <http.testbed.version>1.0</http.testbed.version>
     <slf4j.version>1.5.8</slf4j.version>
     <commons.codec.version>1.4</commons.codec.version>
