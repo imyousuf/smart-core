@@ -1024,7 +1024,7 @@
     <plugin.findbugs.version>2.1</plugin.findbugs.version>
     <plugin.changelog.version>2.1</plugin.changelog.version>
     <plugin.scm.version>1.3</plugin.scm.version>
-    <plugin.assembly.version>2.2-beta-2</plugin.assembly.version>
+    <plugin.assembly.version>2.2</plugin.assembly.version>
     <plugin.release.version>2.0-beta-9</plugin.release.version>
     <plugin.jar.version>2.3.1</plugin.jar.version>
     <plugin.xml.version>1.0-beta-3</plugin.xml.version>
