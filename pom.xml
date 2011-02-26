@@ -959,7 +959,7 @@
   </build>
   <properties>
     <!-- dependency versions -->
-    <atmosphere.version>0.6.3</atmosphere.version>
+    <atmosphere.version>0.7</atmosphere.version>
     <jaxrs.version>1.1.1</jaxrs.version>
     <jgit.version>0.8.4</jgit.version>
     <jersey.version>1.5</jersey.version>
