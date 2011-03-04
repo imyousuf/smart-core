@@ -425,6 +425,11 @@
         <version>${ehcache.version}</version>
       </dependency>
       <dependency>
+        <groupId>net.sf.ehcache</groupId>
+        <artifactId>ehcache-core</artifactId>
+        <version>${ehcache.version}</version>
+      </dependency>
+      <dependency>
         <groupId>dom4j</groupId>
         <artifactId>dom4j</artifactId>
         <version>${dom4j.version}</version>
