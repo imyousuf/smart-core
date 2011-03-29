@@ -40,7 +40,7 @@
   </licenses>
   <scm>
     <connection>scm:git:git://github.com/imyousuf/smart-core.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com:imyousuf/smart-core.git</developerConnection>
+    <developerConnection>scm:git:ssh://git@github.com/imyousuf/smart-core.git</developerConnection>
     <url>http://github.com/imyousuf/smart-core</url>
   </scm>
   <distributionManagement>
