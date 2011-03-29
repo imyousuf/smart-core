@@ -5,7 +5,7 @@
   <groupId>com.smartitengineering</groupId>
   <artifactId>smart-core</artifactId>
   <packaging>pom</packaging>
-  <version>0.1</version>
+  <version>0.1.1-SNAPSHOT</version>
   <name>Smart Core</name>
   <url>http://www.smartitengineering.com</url>
   <organization>
@@ -968,7 +968,7 @@
   </build>
   <properties>
     <!-- Internal project dependencies -->
-    <smart.util.version>0.2-SNAPSHOT</smart.util.version>
+    <smart.util.version>0.2</smart.util.version>
     <smart.cms.version>0.1-SNAPSHOT</smart.cms.version>
     <smart.dao.version>0.4-SNAPSHOT</smart.dao.version>
     <smart.user.version>0.2-SNAPSHOT</smart.user.version>
