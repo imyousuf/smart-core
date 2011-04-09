@@ -564,36 +564,6 @@
         <version>${smart.dao.version}</version>
       </dependency>
       <dependency>
-        <groupId>com.smartitengineering</groupId>
-        <artifactId>smart-rs</artifactId>
-        <version>${smart.dao.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.smartitengineering.smart-version</groupId>
-        <artifactId>smart-version-api</artifactId>
-        <version>${smart.dao.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.smartitengineering.smart-version</groupId>
-        <artifactId>smart-dao-version</artifactId>
-        <version>${smart.dao.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.smartitengineering.smart-version</groupId>
-        <artifactId>smart-version-jgit-impl</artifactId>
-        <version>${smart.dao.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.smartitengineering.smart-exim</groupId>
-        <artifactId>smart-exim-api</artifactId>
-        <version>${smart.dao.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.smartitengineering.smart-exim</groupId>
-        <artifactId>smart-exim-xml-impl</artifactId>
-        <version>${smart.dao.version}</version>
-      </dependency>
-      <dependency>
         <groupId>com.google.inject</groupId>
         <artifactId>guice</artifactId>
         <version>${guice.version}</version>
@@ -940,6 +910,9 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-release-plugin</artifactId>
           <version>${plugin.release.version}</version>
+          <configuration>
+            <goals>deploy</goals>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -969,10 +942,10 @@
   <properties>
     <!-- Internal project dependencies -->
     <smart.util.version>0.2</smart.util.version>
-    <smart.cms.version>0.1-SNAPSHOT</smart.cms.version>
-    <smart.dao.version>0.4-SNAPSHOT</smart.dao.version>
-    <smart.user.version>0.2-SNAPSHOT</smart.user.version>
+    <smart.dao.version>0.4</smart.dao.version>
     <async.events.version>0.1</async.events.version>
+    <smart.cms.version>0.1-SNAPSHOT</smart.cms.version>
+    <smart.user.version>0.2-SNAPSHOT</smart.user.version>
     <!-- dependency versions -->
     <atmosphere.version>0.7</atmosphere.version>
     <jaxrs.version>1.1.1</jaxrs.version>
