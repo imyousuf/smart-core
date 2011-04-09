@@ -968,11 +968,11 @@
   </build>
   <properties>
     <!-- Internal project dependencies -->
-    <smart.util.version>0.2-SNAPSHOT</smart.util.version>
+    <smart.util.version>0.3-SNAPSHOT</smart.util.version>
     <smart.cms.version>0.1-SNAPSHOT</smart.cms.version>
-    <smart.dao.version>0.4-SNAPSHOT</smart.dao.version>
+    <smart.dao.version>0.5-SNAPSHOT</smart.dao.version>
     <smart.user.version>0.2-SNAPSHOT</smart.user.version>
-    <async.events.version>0.1-SNAPSHOT</async.events.version>
+    <async.events.version>0.2-SNAPSHOT</async.events.version>
     <!-- dependency versions -->
     <atmosphere.version>0.7</atmosphere.version>
     <jaxrs.version>1.1.1</jaxrs.version>
