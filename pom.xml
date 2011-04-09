@@ -987,7 +987,7 @@
     <jetty.version>7.3.1.v20110307</jetty.version>
     <ant.contrib.version>1.0b3</ant.contrib.version>
     <hadoop.version>0.20-append-r1056497</hadoop.version>
-    <hbase.version>0.90.1</hbase.version>
+    <hbase.version>0.90.2</hbase.version>
     <http.testbed.version>1.0</http.testbed.version>
     <slf4j.version>1.5.8</slf4j.version>
     <commons.codec.version>1.4</commons.codec.version>
