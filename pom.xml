@@ -943,7 +943,7 @@
     <!-- Internal project dependencies -->
     <smart.util.version>0.2</smart.util.version>
     <smart.dao.version>0.4</smart.dao.version>
-    <async.events.version>0.1</async.events.version>
+    <async.events.version>0.1.1</async.events.version>
     <smart.cms.version>0.1-SNAPSHOT</smart.cms.version>
     <smart.user.version>0.2-SNAPSHOT</smart.user.version>
     <!-- dependency versions -->
