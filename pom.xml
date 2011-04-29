@@ -941,13 +941,13 @@
   </build>
   <properties>
     <!-- Internal project dependencies -->
-    <smart.util.version>0.2</smart.util.version>
+    <smart.util.version>0.2.1</smart.util.version>
     <smart.dao.version>0.4</smart.dao.version>
     <async.events.version>0.1.1</async.events.version>
     <smart.cms.version>0.1-SNAPSHOT</smart.cms.version>
     <smart.user.version>0.2-SNAPSHOT</smart.user.version>
     <!-- dependency versions -->
-    <atmosphere.version>0.7</atmosphere.version>
+    <atmosphere.version>0.7.1</atmosphere.version>
     <jaxrs.version>1.1.1</jaxrs.version>
     <jgit.version>0.8.4</jgit.version>
     <jersey.version>1.5</jersey.version>
@@ -993,7 +993,7 @@
     <commons.codec.version>1.4</commons.codec.version>
     <velocity.version>1.6</velocity.version>
     <commons.httpclient.version>3.1</commons.httpclient.version>
-    <solr.version>1.4.1</solr.version>
+    <solr.version>3.1.0</solr.version>
     <guava.version>r06</guava.version>
     <!-- plugins versions -->
     <plugin.jetty.version>${jetty.version}</plugin.jetty.version>
