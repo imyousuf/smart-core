@@ -384,6 +384,21 @@
         <version>${async.events.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.apache.maven</groupId>
+        <artifactId>maven-plugin-api</artifactId>
+        <version>${maven.plugin.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.maven</groupId>
+        <artifactId>maven-project</artifactId>
+        <version>${maven.plugin.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.sun.codemodel</groupId>
+        <artifactId>codemodel</artifactId>
+        <version>${codemodel.version}</version>
+      </dependency>
+      <dependency>
         <groupId>c3p0</groupId>
         <artifactId>c3p0</artifactId>
         <version>${c3p0.version}</version>
@@ -1007,6 +1022,8 @@
     <guava.version>r06</guava.version>
     <jasperreports.version>4.0.1</jasperreports.version>
     <poi.version>3.7</poi.version>
+    <maven.plugin.version>2.2.1</maven.plugin.version>
+    <codemodel.version>2.4</codemodel.version>
     <!-- plugins versions -->
     <plugin.jetty.version>${jetty.version}</plugin.jetty.version>
     <plugin.compiler.version>2.0.2</plugin.compiler.version>
