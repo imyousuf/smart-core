@@ -838,7 +838,6 @@
           <version>${plugin.javadoc.version}</version>
           <inherited>${javadoc.inherited}</inherited>
           <configuration>
-            <aggregate>${javadoc.aggregate}</aggregate>
             <linksource>${javadoc.linksource}</linksource>
             <attach>${javadoc.attach}</attach>
           </configuration>
@@ -975,7 +974,7 @@
     <atmosphere.version>0.7.1</atmosphere.version>
     <jaxrs.version>1.1.1</jaxrs.version>
     <jgit.version>0.8.4</jgit.version>
-    <jersey.version>1.5</jersey.version>
+    <jersey.version>1.8</jersey.version>
     <commons.io.version>1.4</commons.io.version>
     <commons.lang.version>2.5</commons.lang.version>
     <commons.collection.version>3.2.1</commons.collection.version>
@@ -1006,19 +1005,19 @@
     <abdera.version>1.0</abdera.version>
     <mysql.version>5.1.9</mysql.version>
     <aspectj.version>1.6.6</aspectj.version>
-    <quartz.version>1.8.4</quartz.version>
+    <quartz.version>1.8.5</quartz.version>
     <jstl.version>1.2</jstl.version>
     <guice.version>2.0</guice.version>
-    <jetty.version>7.3.1.v20110307</jetty.version>
+    <jetty.version>7.4.3.v20110701</jetty.version>
     <ant.contrib.version>1.0b3</ant.contrib.version>
-    <hadoop.version>0.20-append-r1056497</hadoop.version>
-    <hbase.version>0.90.2</hbase.version>
+    <hadoop.version>0.20.2-cdh3u1</hadoop.version>
+    <hbase.version>0.90.3</hbase.version>
     <http.testbed.version>1.0</http.testbed.version>
     <slf4j.version>1.5.8</slf4j.version>
     <commons.codec.version>1.4</commons.codec.version>
     <velocity.version>1.6</velocity.version>
     <commons.httpclient.version>3.1</commons.httpclient.version>
-    <solr.version>3.1.0</solr.version>
+    <solr.version>3.3.0</solr.version>
     <guava.version>r06</guava.version>
     <jasperreports.version>4.0.1</jasperreports.version>
     <poi.version>3.7</poi.version>
@@ -1037,7 +1036,7 @@
     <plugin.changelog.version>2.1</plugin.changelog.version>
     <plugin.scm.version>1.3</plugin.scm.version>
     <plugin.assembly.version>2.2</plugin.assembly.version>
-    <plugin.release.version>2.1</plugin.release.version>
+    <plugin.release.version>2.2</plugin.release.version>
     <plugin.jar.version>2.3.1</plugin.jar.version>
     <plugin.xml.version>1.0-beta-3</plugin.xml.version>
     <plugin.war.version>2.1-beta-1</plugin.war.version>
@@ -1056,7 +1055,6 @@
     <compiler.target.version>1.6</compiler.target.version>
     <javadoc.inherited>true</javadoc.inherited>
     <javadoc.exec.inherited>true</javadoc.exec.inherited>
-    <javadoc.aggregate>false</javadoc.aggregate>
     <javadoc.linksource>true</javadoc.linksource>
     <javadoc.attach>true</javadoc.attach>
     <surefire.inherited>true</surefire.inherited>
