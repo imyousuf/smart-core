@@ -722,6 +722,16 @@
       </snapshots>
     </repository>
     <repository>
+      <id>cloudera-releases</id>
+      <url>https://repository.cloudera.com/content/groups/cloudera-repos</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
       <id>smartit-googlecode-snapshots</id>
       <url>http://smart-it.googlecode.com/svn/maven2/snapshots</url>
       <releases>
