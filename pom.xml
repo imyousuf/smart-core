@@ -1020,7 +1020,7 @@
     <guice.version>2.0</guice.version>
     <jetty.version>7.4.3.v20110701</jetty.version>
     <ant.contrib.version>1.0b3</ant.contrib.version>
-    <hadoop.version>0.20.2-cdh3u1</hadoop.version>
+    <hadoop.version>0.20-append-r1056497</hadoop.version>
     <hbase.version>0.90.3</hbase.version>
     <http.testbed.version>1.0</http.testbed.version>
     <slf4j.version>1.5.8</slf4j.version>
