@@ -641,6 +641,11 @@
       </dependency>
       <dependency>
         <groupId>se.scalablesolutions.akka</groupId>
+        <artifactId>akka-remote</artifactId>
+        <version>${akka.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>se.scalablesolutions.akka</groupId>
         <artifactId>akka-typed-actor</artifactId>
         <version>${akka.version}</version>
         <exclusions>
