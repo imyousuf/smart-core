@@ -639,6 +639,17 @@
         <artifactId>akka-actor</artifactId>
         <version>${akka.version}</version>
       </dependency>
+      <dependency>
+        <groupId>se.scalablesolutions.akka</groupId>
+        <artifactId>akka-typed-actor</artifactId>
+        <version>${akka.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.guiceyfruit</groupId>
+            <artifactId>guice-all</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
       <!-- Runtime scope -->
       <dependency>
         <groupId>org.slf4j</groupId>
