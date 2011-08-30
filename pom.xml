@@ -496,7 +496,7 @@
       <dependency>
         <groupId>org.mortbay.jetty</groupId>
         <artifactId>jsp-2.1-glassfish</artifactId>
-        <version>9.1.1.B60.25.p2</version>
+        <version>${jetty.glassfish.jsp.version}</version>
       </dependency>
       <dependency>
         <groupId>xom</groupId>
@@ -1072,6 +1072,7 @@
     <poi.version>3.7</poi.version>
     <maven.plugin.version>2.2.1</maven.plugin.version>
     <codemodel.version>2.4</codemodel.version>
+    <jetty.glassfish.jsp.version>9.1.1.B60.25.p2</jetty.glassfish.jsp.version>
     <!-- plugins versions -->
     <plugin.jetty.version>${jetty.version}</plugin.jetty.version>
     <plugin.compiler.version>2.0.2</plugin.compiler.version>
