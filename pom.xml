@@ -620,6 +620,11 @@
         <version>${smart.cms.version}</version>
       </dependency>
       <dependency>
+        <groupId>com.smartitengineering.smart-cms</groupId>
+        <artifactId>api-spi-guice-binder</artifactId>
+        <version>${smart.cms.version}</version>
+      </dependency>
+      <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
         <version>${guava.version}</version>
