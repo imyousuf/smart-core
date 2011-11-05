@@ -499,6 +499,11 @@
         <version>${jetty.glassfish.jsp.version}</version>
       </dependency>
       <dependency>
+        <groupId>de.jflex</groupId>
+        <artifactId>jflex</artifactId>
+        <version>${jflex.version}</version>
+      </dependency>
+      <dependency>
         <groupId>xom</groupId>
         <artifactId>xom</artifactId>
         <version>${xom.version}</version>
@@ -1024,6 +1029,7 @@
     <smart.cms.version>0.1-SNAPSHOT</smart.cms.version>
     <smart.user.version>0.2-SNAPSHOT</smart.user.version>
     <!-- dependency versions -->
+    <jflex.version>1.4.3</jflex.version>
     <akka.version>1.2-RC3</akka.version>
     <atmosphere.version>0.7.1</atmosphere.version>
     <jaxrs.version>1.1.1</jaxrs.version>
