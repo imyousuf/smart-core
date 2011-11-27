@@ -119,6 +119,17 @@
         <version>${hbase.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.apache.zookeeper</groupId>
+        <artifactId>zookeeper</artifactId>
+        <version>${zookeeper.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>jline</groupId>
+            <artifactId>jline</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
         <groupId>asm</groupId>
         <artifactId>asm</artifactId>
         <version>${asm.version}</version>
@@ -1071,6 +1082,7 @@
     <jetty.version>7.4.3.v20110701</jetty.version>
     <ant.contrib.version>1.0b3</ant.contrib.version>
     <hadoop.version>0.20-append-r1056497</hadoop.version>
+    <zookeeper.version>3.3.2</zookeeper.version>
     <hbase.version>0.90.3</hbase.version>
     <http.testbed.version>1.0</http.testbed.version>
     <slf4j.version>1.5.8</slf4j.version>
