@@ -109,6 +109,11 @@
         <version>${commons.httpclient.version}</version>
       </dependency>
       <dependency>
+        <groupId>commons-email</groupId>
+        <artifactId>commons-email</artifactId>
+        <version>${commons.email.version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.apache.solr</groupId>
         <artifactId>solr-solrj</artifactId>
         <version>${solr.version}</version>
@@ -1057,10 +1062,11 @@
     <atmosphere.version>0.7.1</atmosphere.version>
     <jaxrs.version>1.1.1</jaxrs.version>
     <jgit.version>0.8.4</jgit.version>
-    <jersey.version>1.8</jersey.version>
+    <jersey.version>1.10</jersey.version>
     <commons.io.version>1.4</commons.io.version>
     <commons.lang.version>2.5</commons.lang.version>
     <commons.collection.version>3.2.1</commons.collection.version>
+    <commons.email.version>1.2</commons.email.version>
     <jruby.version>1.5.1</jruby.version>
     <jruby.embed.version>0.1.3</jruby.embed.version>
     <groovy.version>1.7.3</groovy.version>
