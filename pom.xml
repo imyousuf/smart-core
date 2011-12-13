@@ -114,6 +114,11 @@
         <version>${commons.email.version}</version>
       </dependency>
       <dependency>
+        <groupId>javax.mail</groupId>
+        <artifactId>mail</artifactId>
+        <version>${javamail.version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.apache.solr</groupId>
         <artifactId>solr-solrj</artifactId>
         <version>${solr.version}</version>
@@ -1130,6 +1135,7 @@
     <maven.plugin.version>2.2.1</maven.plugin.version>
     <codemodel.version>2.4</codemodel.version>
     <jetty.glassfish.jsp.version>9.1.1.B60.25.p2</jetty.glassfish.jsp.version>
+    <javamail.version>1.4.4</javamail.version>
     <!-- plugins versions -->
     <plugin.jetty.version>${jetty.version}</plugin.jetty.version>
     <plugin.compiler.version>2.0.2</plugin.compiler.version>
