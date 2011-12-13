@@ -658,6 +658,11 @@
         <version>${smart.cms.version}</version>
       </dependency>
       <dependency>
+        <groupId>com.smartitengineering.smart-cms</groupId>
+        <artifactId>content-repo-dao-impl</artifactId>
+        <version>${smart.cms.version}</version>
+      </dependency>
+      <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
         <version>${guava.version}</version>
@@ -1033,6 +1038,16 @@
           <groupId>org.codehaus.mojo.jspc</groupId>
           <artifactId>jspc-maven-plugin</artifactId>
           <version>${plugin.jspc.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>com.smartitengineering.smart-cms</groupId>
+          <artifactId>maven-pojo-generator-plugin</artifactId>
+          <version>${smart.cms.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>com.smartitengineering.smart-cms</groupId>
+          <artifactId>cms-tools-plugin</artifactId>
+          <version>${smart.cms.version}</version>
         </plugin>
       </plugins>
     </pluginManagement>
