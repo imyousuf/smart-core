@@ -222,6 +222,11 @@
         <version>${aspectj.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.subethamail</groupId>
+        <artifactId>subethasmtp</artifactId>
+        <version>${subethasmtp.version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.aspectj</groupId>
         <artifactId>aspectjweaver</artifactId>
         <version>${aspectj.version}</version>
@@ -1136,6 +1141,7 @@
     <codemodel.version>2.4</codemodel.version>
     <jetty.glassfish.jsp.version>9.1.1.B60.25.p2</jetty.glassfish.jsp.version>
     <javamail.version>1.4.4</javamail.version>
+    <subethasmtp.version>3.1.6</subethasmtp.version>
     <!-- plugins versions -->
     <plugin.jetty.version>${jetty.version}</plugin.jetty.version>
     <plugin.compiler.version>2.0.2</plugin.compiler.version>
