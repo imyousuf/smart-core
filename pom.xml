@@ -1059,6 +1059,23 @@
           <artifactId>cms-tools-plugin</artifactId>
           <version>${smart.cms.version}</version>
         </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>appassembler-maven-plugin</artifactId>
+          <version>${plugin.appassembler.version}</version>        
+          <configuration>
+            <configurationDirectory>conf</configurationDirectory>
+            <copyConfigurationDirectory>true</copyConfigurationDirectory>
+            <assembleDirectory>${project.build.directory}/appassemble</assembleDirectory>
+            <extraJvmArguments>-Xmx1024m -Xms128m -XX:+CMSClassUnloadingEnabled -XX:+CMSPermGenSweepingEnabled -XX:PermSize=128M -XX:MaxPermSize=512M</extraJvmArguments>
+            <repositoryLayout>flat</repositoryLayout>
+            <includeConfigurationDirectoryInClasspath>true</includeConfigurationDirectoryInClasspath>         
+            <platforms>
+              <platform>windows</platform>
+              <platform>unix</platform>
+            </platforms>
+          </configuration>
+        </plugin>
       </plugins>
     </pluginManagement>
     <extensions>
@@ -1144,6 +1161,7 @@
     <subethasmtp.version>3.1.6</subethasmtp.version>
     <!-- plugins versions -->
     <plugin.jetty.version>${jetty.version}</plugin.jetty.version>
+    <plugin.appassembler.version>1.1.1</plugin.appassembler.version>
     <plugin.compiler.version>2.0.2</plugin.compiler.version>
     <plugin.exec.version>1.1.1</plugin.exec.version>
     <plugin.site.version>2.0.1</plugin.site.version>
