@@ -1170,7 +1170,7 @@
     <http.testbed.version>1.0</http.testbed.version>
     <slf4j.version>1.5.8</slf4j.version>
     <commons.codec.version>1.4</commons.codec.version>
-    <velocity.version>1.6</velocity.version>
+    <velocity.version>1.7</velocity.version>
     <commons.httpclient.version>3.1</commons.httpclient.version>
     <solr.version>3.4.0</solr.version>
     <guava.version>r06</guava.version>
