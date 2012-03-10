@@ -1116,7 +1116,7 @@
     <hub.version>0.1</hub.version>
     <smart.util.version>0.2.2</smart.util.version>
     <smart.dao.version>0.4.1</smart.dao.version>
-    <async.events.version>0.2-SNAPSHOT</async.events.version>
+    <async.events.version>0.2</async.events.version>
     <smart.cms.version>0.1-SNAPSHOT</smart.cms.version>
     <smart.user.version>0.2-SNAPSHOT</smart.user.version>
     <smart.generator.engine.version>0.1-SNAPSHOT</smart.generator.engine.version>
