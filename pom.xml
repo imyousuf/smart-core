@@ -653,6 +653,11 @@
       </dependency>
       <dependency>
         <groupId>com.google.inject.extensions</groupId>
+        <artifactId>guice-assistedinject</artifactId>
+        <version>${guice.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.inject.extensions</groupId>
         <artifactId>guice-multibindings</artifactId>
         <version>${guice.version}</version>
       </dependency>
@@ -1087,14 +1092,14 @@
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>appassembler-maven-plugin</artifactId>
-          <version>${plugin.appassembler.version}</version>        
+          <version>${plugin.appassembler.version}</version>
           <configuration>
             <configurationDirectory>conf</configurationDirectory>
             <copyConfigurationDirectory>true</copyConfigurationDirectory>
             <assembleDirectory>${project.build.directory}/appassemble</assembleDirectory>
             <extraJvmArguments>-Xmx1024m -Xms128m -XX:+CMSClassUnloadingEnabled -XX:+CMSPermGenSweepingEnabled -XX:PermSize=128M -XX:MaxPermSize=512M</extraJvmArguments>
             <repositoryLayout>flat</repositoryLayout>
-            <includeConfigurationDirectoryInClasspath>true</includeConfigurationDirectoryInClasspath>         
+            <includeConfigurationDirectoryInClasspath>true</includeConfigurationDirectoryInClasspath>
             <platforms>
               <platform>windows</platform>
               <platform>unix</platform>
